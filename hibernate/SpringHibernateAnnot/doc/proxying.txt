@@ -1,0 +1,9 @@
+SPRING AOP supports both
+
+1.JDK Dynamic proxy can only proxy by interface 
+(so your target class needs to implement an interface, 
+which will also be implemented by the proxy class.
+
+2.CGLIB (and javassist) can create a proxy by subclassing. 
+In this scenario the proxy becomes a subclass of the target class. 
+No need for interfaces.
